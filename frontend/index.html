@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <title>Audio Organizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="aurora"></div>
+
+<div class="container">
+
+    <h1>Audio Organizer</h1>
+
+    <div class="upload-box" id="upload-area">
+        <p>Arraste um arquivo ZIP aqui<br>ou clique para selecionar</p>
+        <input type="file" id="fileInput" hidden />
+    </div>
+
+    <label>Quantas palavras extrair do áudio?</label>
+    <select id="wordCount">
+        <option value="1">1 palavra</option>
+        <option value="2">2 palavras</option>
+        <option value="3">3 palavras</option>
+        <option value="4">4 palavras</option>
+        <option value="5">5 palavras</option>
+    </select>
+
+    <label>Manter prefixo?</label>
+    <select id="prefixMode">
+        <option value="on">Sim</option>
+        <option value="off">Não</option>
+    </select>
+
+    <button id="startBtn">Organizar Áudios</button>
+
+    <div class="progress">
+        <div class="progress-bar" id="bar"></div>
+    </div>
+
+    <div class="result" id="result"></div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+fastapi
+uvicorn[standard]
+python-multipart
+pydub
+numpy
+librosa
+tqdm
+speechrecognition
+soundfile
+python-dotenv
